@@ -255,3 +255,80 @@ body {
     font-size: 18px;
     color: #5d3b1c;
 }
+
+.NuestrosProductos {  
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NuestrosProductos h1 {
+    font-family: 'Abril Fatface', cursive;
+    color: #5b422a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cuadrosNP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.Cuadrogrande, .CuadroPeque {
+    background-color: #dec49d;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    height: 300px; /* Altura igual para ambos cuadros */
+}
+
+/* Ajusta los anchos según sea necesario */
+.Cuadrogrande {
+    width: 60%;
+}
+
+.CuadroPeque {
+    width: 40%;
+}
+
+/* Contenedor que oculta el desbordamiento */
+.CarruselNP-container {
+    width: 100%;
+    overflow: hidden; /* Oculta las imágenes que están fuera del contenedor */
+}
+
+.CarruselNP {
+    display: flex;
+    width: 600%; /* Ancho total del carrusel para 6 imágenes */
+    height: 100%;
+    animation: deslizar 36s infinite; /* Ajusta la duración de la animación */
+}
+
+.CarruselNP img {
+    width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Animación para el carrusel */
+@keyframes deslizar {
+    0% { transform: translateX(0); }
+    16.66% { transform: translateX(-100%); }
+    33.33% { transform: translateX(-200%); }
+    50% { transform: translateX(-300%); }
+    66.66% { transform: translateX(-400%); }
+    83.33% { transform: translateX(-500%); }
+    100% { transform: translateX(-600%); } /* Mueve el carrusel al final */
+}
