@@ -25,7 +25,11 @@ nav ul {
     gap: 20px;
 }
 
-.login-btn {
+.cart-icon img {
+    width: 30px;
+}
+
+.profile-btn {
     background-color: #ff9900;
     border: none;
     padding: 10px 20px;
@@ -33,61 +37,76 @@ nav ul {
     cursor: pointer;
 }
 
-.register-container {
+.cart-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 50px;
 }
 
-.register-form {
+.products {
     width: 60%;
-    background-color: #d2b48c;
+    background-color: #f5deb3;
     padding: 20px;
     border-radius: 10px;
 }
 
-.register-form h1 {
-    font-size: 36px;
+.products h2 {
+    font-size: 24px;
     font-weight: bold;
     text-align: left;
 }
 
-.register-form p {
-    font-size: 14px;
+.product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.product img {
+    width: 100px;
 }
 
-form input, form button {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.product-info {
+    flex-grow: 1;
 }
 
-form button {
+.summary {
+    width: 30%;
+    background-color: #d2b48c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.summary h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#pay-btn {
     background-color: #d2691e;
     color: white;
+    padding: 10px;
     border: none;
+    width: 100%;
     cursor: pointer;
 }
 
-.product-promo {
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.recommended {
+    margin-top: 30px;
+    text-align: center;
 }
 
-.product-promo img {
-    max-width: 100%;
+.recommended h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.recommended img {
+    width: 100px;
     height: auto;
+    margin: 10px;
 }
 
 footer {
