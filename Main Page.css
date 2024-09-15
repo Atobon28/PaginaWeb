@@ -21,7 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%; 
+    width: 100%;
     height: 90px;
     font-family: 'Poppins', sans-serif;
     padding: 10px;
@@ -30,11 +30,12 @@ body {
 
 .alinear {
     display: flex;
-    gap: 15px; 
-    text-align: right;
+    justify-content: flex-end; 
+    align-items: center; 
 }
 
 .barrita a {
+    margin: 0 15px; 
     text-decoration: none;
     color: black;
 }
@@ -45,9 +46,11 @@ body {
 
 #Carrito {
     height: 30px;
+    margin-left: 15px; 
 }
 
 .Iniciar {
+    margin-left: 15px; 
     width: 100px;
     padding: 10px;
     border-radius: 20px;
@@ -61,3 +64,159 @@ body {
     color: white;
     background-color: #5F4209;
 }
+
+.contenedor-busqueda {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-esquina {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icono-esquina.izquierda {
+    left: 30px;
+}
+
+.icono-esquina.derecha {
+    right: 30px;
+}
+
+.icono-esquina:hover {
+    transform: scale(1.1);
+}
+
+.buscador-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.busca {
+    padding: 10px;
+    width: 350px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(210, 161, 88, 0.667);
+}
+
+.buscador-centrado i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.buscador-centrado i:hover {
+    transform: scale(1.1);
+}
+
+.Losmejoreprodu {
+    text-align: center;
+    padding: 30px;
+}
+
+.Losmejoreprodu h1 {
+    font-size: 40px;
+    font-family: 'Abril Fatface', serif;
+    margin-bottom: 40px;
+    color: #3c2307;
+}
+
+.losproductos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Cuadrdoprodu {
+    background-color: rgb(232, 218, 191);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.Cuadrdoprodu:hover {
+    transform: translateY(-10px);
+}
+
+.imgdestacados {
+    width: 120px;
+    height: auto;
+    margin-top: -50px;
+    display: block; /* Asegura que la imagen sea un bloque para centrarse */
+    margin-left: auto; /* Centra la imagen en el contenedor */
+    margin-right: auto; /* Centra la imagen en el contenedor */
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0;
+    font-family: 'Poppins', serif;
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    font-family: 'Poppins', serif;
+    text-align: left; /* Alinea el texto del párrafo a la izquierda */
+}
+
+.Mas {
+    align-self: flex-start; /* Alinea el enlace a la izquierda dentro del contenedor flex */
+    font-size: 14px;
+    color: #3a2d00;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: 'Poppins', serif;
+    text-align: left;
+    padding: 5px 0;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-family: 'Poppins', serif;
+}
+
+.Losmejoreprodu .corazon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #211a00;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.Losmejoreprodu .corazon:hover {
+    transform: scale(1.2);
+}
+
+.Losmejoreprodu .corazon:active {
+    color: red;
+}
+
+

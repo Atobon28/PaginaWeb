@@ -21,34 +21,36 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: cover;
+    width: 100%;
     height: 90px;
     font-family: 'Poppins', sans-serif;
-
     padding: 10px;
     text-align: center;
-    }
+}
 
 .alinear {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
 }
 
 .barrita a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: black;
-    }
+    margin: 0 15px; 
+    text-decoration: none;
+    color: black;
+}
 
 .barrita a:hover {
-        color: rgb(169, 66, 1);
-    }
+    color: rgb(169, 66, 1);
+}
 
-#Carrito   {
-        height: 30px;
-       }
+#Carrito {
+    height: 30px;
+    margin-left: 15px; 
+}
 
 .Iniciar {
-    margin: 0 15px;
+    margin-left: 15px; 
     width: 100px;
     padding: 10px;
     border-radius: 20px;
@@ -59,9 +61,8 @@ body {
 }
 
 .Iniciar:hover {
-    color: rgb(255, 255, 255);
+    color: white;
     background-color: #5F4209;
-    
 }
 
 .slider-frame {
