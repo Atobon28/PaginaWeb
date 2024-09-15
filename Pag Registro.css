@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffe5b4;
@@ -97,7 +100,7 @@ footer {
     padding: 20px;
 }
 
-.download-apps img {
+.descargar img {
     width: 120px;
     margin: 10px;
 }
