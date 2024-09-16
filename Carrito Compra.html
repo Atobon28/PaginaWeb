@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="./Carrito Compra.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./IMAGENES/Ilustración_sin_título.png" alt="Caffeine Logo">
+    <div class="barrita">
+        <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
+        <div class="alinear">
+            <a href="./Inicio.html">Inicio</a>
+            <a href="#Sobrenosotros">Sobre Nosotros</a>
+            <a href="./Main Page.html">Productos</a>
+            <a href="./Carrito Compra.html">
+                <img src="./IMAGENES/3144456.png" id="Carrito" alt="Carrito">
+            </a>
+            <a href="./Pag Login.html">
+                <button class="Iniciar">Iniciar</button>
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre Nosotros</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="" class="cart-icon"><img src="./IMAGENES/3144456.png" alt="Carrito"></a></li>
-                <li><button class="profile-btn">Perfil</button></li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+
 
     <main class="cart-container">
         <section class="products">
@@ -65,27 +66,41 @@
             </div>
         </section>
 
-        <aside class="summary">
-            <h2>TOTAL...</h2>
-            <p>Total: <span id="total">440.000</span></p>
-            <button id="pay-btn">PAGAR</button>
-
-            <div class="recommended">
-                <h3>RECOMENDADOS</h3>
-                <img src="./IMAGENES/mockupamarillo.png" alt="Recomendado 1">
-                <img src="./IMAGENES/chemex.png" alt="Recomendado 2">
-            </div>
-        </aside>
+            <div class="total-section">
+                <h1>TOTAL...</h1>
+                <p>Total: 440.000</p>
+                
+                <button class="pay-button">PAGAR</button>
+                
+                <div class="recomendados">
+                  <h2>RECOMENDADOS</h2>
+                  <img src="./IMAGENES/mockupamarillo.png" class="recomendado" alt="Producto 1">
+                  <img src="./IMAGENES/chemex.png" class="recomendado" alt="Producto 2">
+                </div>
+              </div>
+            
+       
     </main>
 
-    <footer>
-        <p>© 2024 Ana Tobón & Cristina Jauregui</p>
-        <p>Contactos: +57 317 8489086, +57 321 7593471</p>
-        <p>Email: anita.tobon28@gmail.com, crijaurguigui@gmail.com</p>
-        <div class="descargar">
-            <a href=""><img src="https://bullerockgc.com/wp-content/uploads/2018/06/App-store-icon-transparent-photo-12.png" alt="App Store"></a>
-            <a href=""><img src="https://i0.wp.com/chbonline.org/wp-content/uploads/2018/06/google-play-icon.png?fit=4706%2C1633&ssl=1" alt="Google Play"></a>
-        </div>
-    </footer>
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Contáctanos</h2>
+            <p>Teléfono 1: +123 456 7890</p>
+            <p>Teléfono 2: +098 765 4321</p>
+            <div class="footer-icons">
+                <i class="fa-brands fa-google-play"></i>
+                <i class="fa-brands fa-apple"></i>
+            </div>
+    <div class="footer-links">
+        <a href="#">Condiciones de uso</a> | 
+        <a href="#">Aviso de privacidad</a> | 
+        <a href="#">Aviso de Privacidad de Datos de Salud</a> | 
+        <a href="#">Tus opciones de privacidad de los anuncios</a>
+    </div>
+    <p class="author">Ana Tobon y Cris Jauregui &copy; 2024</p>
+</div>
+</footer>
+
+<script src="https://kit.fontawesome.com/1d60dfaa33.js" crossorigin="anonymous"></script>
 </body>
 </html>
