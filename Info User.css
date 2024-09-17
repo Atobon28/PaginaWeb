@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 body {
-    background-color: rgb(238, 230, 163);
+    background-color: #FEE6A8;
     background-size: cover;
     background-repeat: no-repeat;
    }
@@ -48,7 +48,6 @@ body {
     margin-left: 15px; 
 }
 .Perfil {
-    font-family: 'Poppins', sans-serif; 
     margin-left: 15px; 
     width: 100px;
     padding: 10px;
@@ -59,8 +58,7 @@ body {
     font-size: 20px;
 }
 
-.Perfil :hover {
-    font-family: 'Poppins', sans-serif; 
+.Perfil:hover {
     color: white;
     background-color: #5F4209;
 }
@@ -85,7 +83,7 @@ body {
 }
 
 .profile-card {
-    background-color: #A0522D;
+    background-color: #9e712e9f;
     padding: 20px;
     border-radius: 10px;
     width: 500px;
@@ -110,9 +108,9 @@ body {
 }
 
 .profile-item button {
-    background-color: #4B3621;
-    color: #FFF;
-    border: none;
+    background-color: #442108;
+    color: #EDA55D;
+    border-radius: 10px;
     padding: 5px
 }
 .footer {
