@@ -24,7 +24,7 @@ let cafes = {
         gramos: "",
         cantidad: "",
         precio: "35.000",
-        imagen: ""
+        imagen: "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/mockupmorado.png"
     },
     cafe4: { 
         nombre: "Tapi Natural",
@@ -42,7 +42,7 @@ let cafes = {
         gramos: "",
         cantidad: "",
         precio: "25.000",
-        imagen: ""
+        imagen: "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/mockupnaranja.png"
     },
     cafe6: { 
         nombre: "Caturra Natural",
@@ -51,7 +51,7 @@ let cafes = {
         gramos: "",
         cantidad: "",
         precio: "25.000",
-        imagen: ""
+        imagen: "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/mockupazul.png"
     }
 };
 
