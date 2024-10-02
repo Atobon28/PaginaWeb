@@ -127,3 +127,6 @@ let otros = {
         imagen: "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/Molino.png"
     }
 };
+
+let Productos = [cafes, otros]
+console.log (Productos)
