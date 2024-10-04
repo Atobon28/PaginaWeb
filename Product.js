@@ -8,6 +8,19 @@ class Cafes {
         this.precio = precio
         this.imagen = imagen
      }
+
+     htmlCard() {
+    
+        return `
+        <a href="./Producto1.html" class="producto">
+                    <i class="fa-brands fa-gratipay icono-esquinaa corazon1"></i>
+                    <img src="${this.imagen}" alt="Producto 1">
+                    <p>${this.nombre}</p>
+                    <p class="precio">${this.precio}</p>
+                    <i class="fa-solid fa-circle-plus plus1"></i>
+                </a>
+        `
+    }
 }
 
 class Otros { 
@@ -18,4 +31,18 @@ class Otros {
         this.precio = precio
         this.imagen = imagen
     }
+
+    htmlCard() {
+    
+        return `
+        <a href="./Producto1.html" class="producto">
+                    <i class="fa-brands fa-gratipay icono-esquinaa corazon1"></i>
+                    <img src="${this.imagen}" alt="Producto 1">
+                    <p>${this.nombre}</p>
+                    <p class="precio">${this.precio}</p>
+                    <i class="fa-solid fa-circle-plus plus1"></i>
+                </a>
+        `
+    }
 }
+
