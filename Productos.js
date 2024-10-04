@@ -51,7 +51,7 @@ let cafes = {
         gramos: "",
         cantidad: "",
         precio: "25.000",
-        imagen: "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/mockupazul.png"
+        imagen: "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/mockupazul.pngchttps://github.com/CrisJauregui/Chat"
     }
 };
 
