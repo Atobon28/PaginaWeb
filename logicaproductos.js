@@ -12,8 +12,13 @@ function RenderAllProducts () {
     let container = document.getElementById("grid-productos")
     for (let i = 0; i < Products.length; i++) {
         let Producto = Products [i]
-        container.innerHTML += Producto.htmlCard()
+        container.innerHTML += Producto.htmlCard(i)
     }
+}
+
+function productSelected(pos){
+    let productselected = Products[pos]
+    window.location = "./Producto1.html?name=" + productselected.nombre
 }
 
 ParseProductosToProducts()
@@ -33,8 +38,13 @@ function RenderAllOtricos () {
     let container = document.getElementById("grid-productos")
     for (let i = 0; i < Otricos.length; i++) {
         let Producto = Otricos [i]
-        container.innerHTML += Producto.htmlCard()
+        container.innerHTML += Producto.htmlCard(i)
     }
+}
+
+function OtricosProductselected(pos){
+    let productselected = Products[pos]
+    window.location = "./Producto1.html?name=" + productselected.title
 }
 
 ParseProductosToOtricos()

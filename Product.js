@@ -9,16 +9,16 @@ class Cafes {
         this.imagen = imagen
      }
 
-     htmlCard() {
+     htmlCard(pos) {
     
         return `
-        <a href="./Producto1.html" class="producto">
+        <div class="producto" onclick="productSelected(${pos})"> 
                     <i class="fa-brands fa-gratipay icono-esquinaa corazon1"></i>
                     <img src="${this.imagen}" alt="Producto 1">
                     <p>${this.nombre}</p>
                     <p class="precio">${this.precio}</p>
                     <i class="fa-solid fa-circle-plus plus1"></i>
-                </a>
+                </div>
         `
     }
 }
@@ -32,10 +32,10 @@ class Otros {
         this.imagen = imagen
     }
 
-    htmlCard() {
+    htmlCard(pos) {
     
         return `
-        <a href="./Producto1.html" class="producto">
+        <a href="./Producto1.html" class="producto" onclick="productSelected(${pos})">
                     <i class="fa-brands fa-gratipay icono-esquinaa corazon1"></i>
                     <img src="${this.imagen}" alt="Producto 1">
                     <p>${this.nombre}</p>
