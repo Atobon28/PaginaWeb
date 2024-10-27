@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro de Caffeine</title>
     <link rel="stylesheet" href="./Pag Registro.css">
+    <script defer src="./Pag Registro.js"></script> <!-- Enlace al archivo JS -->
 </head>
 <body>
     <div class="barrita">
-        <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
+        <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
         <div class="alinear">
             <a href="./Inicio.html">Inicio</a>
             <a href="./Main Page.html">Productos</a>
@@ -27,7 +28,7 @@
                 <h1>CAFFEINE</h1>
                 <p>Ten un buen momento compartiendo nuestro café con los que amas</p>
             </div>
-            <form>
+            <form id="registerForm"> <!-- Añadido id para identificar el formulario -->
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -46,9 +47,7 @@
                 <label for="address">Dirección:</label>
                 <input type="text" id="address" name="address" required>
 
-                <a href="./Main Page.html">
-                    <button class="submit">Iniciar</button>
-                </a>
+                <button type="submit" class="submit">Iniciar</button> <!-- Cambiado a type="submit" -->
             </form>
         </div>
         <div class="product-promo">
@@ -65,16 +64,16 @@
                 <i class="fa-brands fa-google-play"></i>
                 <i class="fa-brands fa-apple"></i>
             </div>
-    <div class="footer-links">
-        <a href="#">Condiciones de uso</a> | 
-        <a href="#">Aviso de privacidad</a> | 
-        <a href="#">Aviso de Privacidad de Datos de Salud</a> | 
-        <a href="#">Tus opciones de privacidad de los anuncios</a>
-    </div>
-    <p class="author">Ana Tobon y Cris Jauregui &copy; 2024</p>
-</div>
-</footer>
+            <div class="footer-links">
+                <a href="#">Condiciones de uso</a> | 
+                <a href="#">Aviso de privacidad</a> | 
+                <a href="#">Aviso de Privacidad de Datos de Salud</a> | 
+                <a href="#">Tus opciones de privacidad de los anuncios</a>
+            </div>
+            <p class="author">Ana Tobon y Cris Jauregui &copy; 2024</p>
+        </div>
+    </footer>
 
-<script src="https://kit.fontawesome.com/1d60dfaa33.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d60dfaa33.js" crossorigin="anonymous"></script>
 </body>
 </html>

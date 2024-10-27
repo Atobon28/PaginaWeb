@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Info User.css">
+    <script defer src="./Info User.js"></script>
+
 </head>
 <body>
     <div class="barrita">
@@ -47,6 +49,19 @@
             </div>
         </div>
     </div>
+
+
+<div id="editForm" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Editar Información</h2>
+        <form id="updateForm">
+            <label for="editValue">Nuevo Valor:</label>
+            <input type="text" id="editValue" name="editValue" required>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+</div>
 
     
     <footer class="footer">
