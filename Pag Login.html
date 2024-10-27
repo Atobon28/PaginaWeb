@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./Pag Login.css">
 </head>
 <body>
-   
     <div class="barrita">
         <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
         <div class="alinear">
@@ -31,25 +30,23 @@
                 <h1>CAFFEINE</h1>
                 <h2>MEMBER</h2>
 
-                <form action="MainPage.html" method="post">
+                <form id="login-form">
                     <label for="usuario">Usuario:</label>
                     <input type="text" id="usuario" name="usuario" required>
                     
                     <label for="contraseña">Contraseña:</label>
                     <input type="password" id="contrasena" name="contrasena" required>
                     
-                    <a href="./Main Page.html">
-                        <button class="submit">Entrar</button>
-                    </a> 
-                    
-                    
+                    <button class="submit">Entrar</button>
                 </form>
                 
+                <!-- Aquí se mostrará el mensaje de éxito -->
+                <div id="message" style="color: green; margin-top: 10px;"></div>
+
                 <div class="links">
                     <a href="Pag Registro.html">Crear cuenta</a>
                     <a href="Info User.html">¿Olvidaste tu contraseña?</a>
                 </div>
-                
             </div>
         </section>
     </main>
@@ -63,16 +60,17 @@
                 <i class="fa-brands fa-google-play"></i>
                 <i class="fa-brands fa-apple"></i>
             </div>
-    <div class="footer-links">
-        <a href="#">Condiciones de uso</a> | 
-        <a href="#">Aviso de privacidad</a> | 
-        <a href="#">Aviso de Privacidad de Datos de Salud</a> | 
-        <a href="#">Tus opciones de privacidad de los anuncios</a>
-    </div>
-    <p class="author">Ana Tobon y Cris Jauregui &copy; 2024</p>
-</div>
-</footer>
+            <div class="footer-links">
+                <a href="#">Condiciones de uso</a> | 
+                <a href="#">Aviso de privacidad</a> | 
+                <a href="#">Aviso de Privacidad de Datos de Salud</a> | 
+                <a href="#">Tus opciones de privacidad de los anuncios</a>
+            </div>
+            <p class="author">Ana Tobon y Cris Jauregui &copy; 2024</p>
+        </div>
+    </footer>
 
-<script src="https://kit.fontawesome.com/1d60dfaa33.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d60dfaa33.js" crossorigin="anonymous"></script>
+    <script src="./Pag Login.js"></script> 
 </body>
 </html>

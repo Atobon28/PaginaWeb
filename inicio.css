@@ -259,7 +259,7 @@ body {
 
 .NuestrosProductos {  
     width: 90%;
-    height: 90%;
+    height: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -310,31 +310,35 @@ body {
 
 .CarruselNP-container {
     width: 100%;
-    overflow: hidden; 
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .CarruselNP {
     display: flex;
-    width: 600%; 
-    height: 100%;
-    animation: deslizar 36s infinite; 
+    animation: deslizar 40s linear infinite; /* Aumenta la duración para hacerlo más lento */
 }
 
 .CarruselNP img {
-    width: 100%; 
-    height: 100%;
+    max-height: 200px; /* Altura máxima de las imágenes */
+    width: auto; /* Mantiene la proporción de las imágenes */
     object-fit: contain;
+    margin: 0 10px; /* Espaciado entre imágenes */
+    border-radius: 20px;
+}
+
+/* Duplica los elementos para el efecto de desplazamiento continuo */
+.CarruselNP::after {
+    content: '';
+    display: flex;
 }
 
 @keyframes deslizar {
     0% { transform: translateX(0); }
-    16.66% { transform: translateX(-100%); }
-    33.33% { transform: translateX(-200%); }
-    50% { transform: translateX(-300%); }
-    66.66% { transform: translateX(-400%); }
-    83.33% { transform: translateX(-500%); }
-    100% { transform: translateX(-600%); } 
+    100% { transform: translateX(-100%); }
 }
+
 
 
 .footer {
