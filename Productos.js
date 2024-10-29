@@ -28,8 +28,8 @@ let cafes = [
     },
      { 
         nombre: "Tapi Natural",
-        descripcion: "",
-        tostion: "",
+        descripcion: "Cultivado en las montañas de Rionegro, Antioquia, el Café Tapi Natural es una obra maestra del proceso natural. Con un nivel de tueste que realza sus notas frutales y su cuerpo sedoso, este café presenta sabores intensos con una acidez vibrante y balanceada. Cada taza expresa la dedicación artesanal y el carácter auténtico de su origen en las tierras antioqueñas, ofreciendo una experiencia sensorial inolvidable",
+        tostion: "Media",
         gramos: "",
         cantidad: "",
         precio: "45.000",
