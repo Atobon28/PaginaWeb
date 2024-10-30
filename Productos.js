@@ -44,14 +44,14 @@ let cafes = [
         precio: "25.000",
         imagen: "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/mockupnaranja.png"
     },
-    { 
-        nombre: "Caturra Natural",
-        descripcion: "Cultivado en Pitalito, Huila, el Café Finca Burrito es un café de especialidad de variedad Caturra Natural. Con notas de frutas rojas, cítricos y chocolate oscuro, este café ofrece un perfil vibrante y equilibrado. Producido de manera artesanal y sostenible, captura lo mejor de las tierras altas del Huila.",
-        tostion: "Alta",
-        gramos: "",
-        cantidad: "",
-        precio: "25.000",
-        imagen: "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/mockupazul.pngchttps://github.com/CrisJauregui/Chat"
+    {
+        "nombre": "Caturra Natural",
+        "descripcion": "Cultivado en Pitalito, Huila, el Café Finca Burrito es un café de especialidad de variedad Caturra Natural. Con notas de frutas rojas, cítricos y chocolate oscuro, este café ofrece un perfil vibrante y equilibrado. Producido de manera artesanal y sostenible, captura lo mejor de las tierras altas del Huila.",
+        "tostion": "Alta",
+        "gramos": "",
+        "cantidad": "",
+        "precio": "25.000",
+        "imagen": "https://raw.githubusercontent.com/Atobon28/PaginaWeb/main/IMAGENES/mockupazul.png"
     }
 ]
 
