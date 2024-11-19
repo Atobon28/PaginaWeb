@@ -8,19 +8,22 @@
     <script defer src="./Pag Registro.js"></script> 
 </head>
 <body>
-    <div class="barrita">
-        <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
-        <div class="alinear">
-            <a href="./Inicio.html">Inicio</a>
-            <a href="./Main Page.html">Productos</a>
-            <a href="./Carrito Compra.html">
-                <img src="./IMAGENES/3144456.png" id="Carrito" alt="Carrito">
-            </a>
-            <a href="./Pag Login.html">
-                <button class="Iniciar">Iniciar</button>
-            </a>
+    <div>
+        <div class="barrita">
+            <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
+            <div class="alinear">
+                <a href="./INDEX.html">Inicio</a>
+                <a href="#Sobrenosotros">Sobre Nosotros</a>
+                <a href="./Main Page.html">Productos</a>
+                <a href="./Info User.html">Perfil</a>
+                <a href="./Carrito Compra.html">
+                    <img src="./IMAGENES/3144456.png" id="Carrito" alt="Carrito">
+                </a>
+                <a href="./Pag Login.html">
+                    <button class="Iniciar">Iniciar</button>
+                </a>
+            </div>
         </div>
-    </div>
 
     <main class="register-container">
         <div class="register-form">
@@ -28,27 +31,16 @@
                 <h1>CAFFEINE</h1>
                 <p>Ten un buen momento compartiendo nuestro café con los que amas</p>
             </div>
-            <form id="registerForm"> 
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="surname">Apellido:</label>
-                <input type="text" id="surname" name="surname" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-
-                <label for="city">Ciudad:</label>
-                <input type="text" id="city" name="city" required>
-
-                <label for="address">Dirección:</label>
-                <input type="text" id="address" name="address" required>
-
-                <button type="submit" class="submit">Iniciar</button> 
+            <form id="registerForm">
+                <input id="name" placeholder="Nombre" required>
+                <input id="surname" placeholder="Apellido" required>
+                <input id="email" placeholder="Correo" required>
+                <input id="password" type="password" placeholder="Contraseña" required>
+                <input id="city" placeholder="Ciudad" required>
+                <input id="address" placeholder="Dirección" required>
+                <button type="submit">Registrarse</button>
             </form>
+            
         </div>
         <div class="product-promo">
             <img src="./IMAGENES/mockuprosado.png" alt="Producto Caffeine">

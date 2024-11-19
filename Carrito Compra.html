@@ -7,99 +7,62 @@
     <link rel="stylesheet" href="./Carrito Compra.css">
 </head>
 <body>
-    <div class="barrita">
-        <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
-        <div class="alinear">
-            <a href="./Inicio.html">Inicio</a>
-            <a href="./Main Page.html">Productos</a>
-            <a href="./Carrito Compra.html">
-                <img src="./IMAGENES/3144456.png" id="Carrito" alt="Carrito">
-            </a>
-            <a href="./Pag Login.html">
-                <button class="Iniciar">Iniciar</button>
-            </a>
+    <div>
+        <div class="barrita">
+            <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
+            <div class="alinear">
+                <a href="./INDEX.html">Inicio</a>
+                <a href="#Sobrenosotros">Sobre Nosotros</a>
+                <a href="./Main Page.html">Productos</a>
+                <a href="./Carrito Compra.html">
+                    <img src="./IMAGENES/3144456.png" id="Carrito" alt="Carrito">
+                </a>
+                <a href="./Info User.html">
+                    <button class="Iniciar">Perfil</button>
+                </a>
+            </div>
         </div>
-    </div>
 
+        <main class="cart-container">
+            <section class="products">
+                <h2>TUS PRODUCTOS</h2>
 
-    <main class="cart-container">
-        <section class="products">
-            <h2>TUS PRODUCTOS</h2>
-
-            <div class="product">
-                <img src="./IMAGENES/mockupnaranja.png" alt="Castillo Lavado">
-                <div class="product-info">
-                    <h3>Castillo Lavado</h3>
-                    <p>Total: 50.000</p>
-                    <label for="quantity1">Cantidad:</label>
-                    <select id="quantity1" class="quantity" data-price="50000">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="./IMAGENES/AeroPress.png" alt="Castillo Lavado">
-                <div class="product-info">
-                    <h3>Castillo Lavado</h3>
-                    <p>Total: 300.000</p>
-                    <label for="quantity2">Cantidad:</label>
-                    <select id="quantity2" class="quantity" data-price="300000">
-                        <option value="1">1</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="./IMAGENES/mockupnegro.png" alt="YPI Natural">
-                <div class="product-info">
-                    <h3>YPI Natural</h3>
-                    <p>Total: 90.000</p>
-                    <label for="quantity3">Cantidad:</label>
-                    <select id="quantity3" class="quantity" data-price="90000">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-            </div>
-        </section>
+                <!-- Los productos se renderizan aquí -->
+            </section>
 
             <div class="total-section">
                 <h1>TOTAL...</h1>
                 <p>Total: 440.000</p>
-                
                 <button class="pay-button">PAGAR</button>
-                
                 <div class="recomendados">
-                  <h2>RECOMENDADOS</h2>
-                  <img src="./IMAGENES/mockupamarillo.png" class="recomendado" alt="Producto 1">
-                  <img src="./IMAGENES/chemex.png" class="recomendado" alt="Producto 2">
+                    <h2>RECOMENDADOS</h2>
+                    <img src="./IMAGENES/mockupamarillo.png" class="recomendado" alt="Producto 1">
+                    <img src="./IMAGENES/chemex.png" class="recomendado" alt="Producto 2">
                 </div>
-              </div>
-            
-       
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <h2>Contáctanos</h2>
-            <p>Teléfono 1: +123 456 7890</p>
-            <p>Teléfono 2: +098 765 4321</p>
-            <div class="footer-icons">
-                <i class="fa-brands fa-google-play"></i>
-                <i class="fa-brands fa-apple"></i>
             </div>
-    <div class="footer-links">
-        <a href="#">Condiciones de uso</a> | 
-        <a href="#">Aviso de privacidad</a> | 
-        <a href="#">Aviso de Privacidad de Datos de Salud</a> | 
-        <a href="#">Tus opciones de privacidad de los anuncios</a>
-    </div>
-    <p class="author">Ana Tobon y Cris Jauregui &copy; 2024</p>
-</div>
-</footer>
+        </main>
 
-<script src="https://kit.fontawesome.com/1d60dfaa33.js" crossorigin="anonymous"></script>
+        <footer class="footer">
+            <div class="footer-content">
+                <h2>Contáctanos</h2>
+                <p>Teléfono 1: +123 456 7890</p>
+                <p>Teléfono 2: +098 765 4321</p>
+                <div class="footer-icons">
+                    <i class="fa-brands fa-google-play"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Condiciones de uso</a> | 
+                    <a href="#">Aviso de privacidad</a> | 
+                    <a href="#">Aviso de Privacidad de Datos de Salud</a> | 
+                    <a href="#">Tus opciones de privacidad de los anuncios</a>
+                </div>
+                <p class="author">Ana Tobon y Cris Jauregui &copy; 2024</p>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/1d60dfaa33.js" crossorigin="anonymous"></script>
+        <script src="./carrito.js"></script>
+    </div>
 </body>
 </html>
