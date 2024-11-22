@@ -4,19 +4,33 @@ const cafes = [
     { nombre: "YPI Natural", descripcion: "Café de especialidad", precio: 90000, imagen: "./IMAGENES/mockupnegro.png" }
 ];
 
-// Función para agregar al carrito
-function addToCart(index) {
-    const product = cafes[index]; // Obtenemos el producto
+function addToCart(index, type) {
+    let product;
+    if (type === 'cafe') {
+        product = {...cafes[index]}; // Create a copy
+    } else if (type === 'otro') {
+        product = {...otros[index]}; // Create a copy
+    }
 
-    // Obtener el carrito del localStorage (si no existe, inicializamos uno vacío)
+    // Get existing cart or create new
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // Añadir el producto al carrito
-    cart.push(product);
+    // Check if product already exists in cart
+    const existingProductIndex = cart.findIndex(item => item.nombre === product.nombre);
 
-    // Guardar el carrito en localStorage
+    if (existingProductIndex !== -1) {
+        // Increase quantity if product exists
+        let existingProduct = cart[existingProductIndex];
+        existingProduct.cantidad = (parseInt(existingProduct.cantidad) || 1) + 1;
+    } else {
+        // Add new product with initial quantity
+        product.cantidad = "1";
+        cart.push(product);
+    }
+
+    // Save updated cart
     localStorage.setItem("cart", JSON.stringify(cart));
 
-    alert(`${product.nombre} ha sido agregado al carrito.`);
+    // Optional: Show confirmation
+    alert(`${product.nombre} agregado al carrito`);
 }
-

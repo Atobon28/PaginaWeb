@@ -71,11 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Función de búsqueda actualizada con funcionalidad de carrito
 function searchProducts() {
     const query = document.getElementById('searchInput').value.toLowerCase();
     const resultsContainer = document.getElementById('searchResults');
-    resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
+    resultsContainer.innerHTML = ''; 
 
     const allProducts = [...Products, ...Otricos];
     const filteredProducts = allProducts.filter(product => {
@@ -83,19 +82,18 @@ function searchProducts() {
     });
 
     if (filteredProducts.length > 0) {
-        // Crear contenedor con el mismo estilo que la sección de productos
         resultsContainer.innerHTML = `
             <div class="section productos">
                 <h1>Resultados de búsqueda</h1>
                 <div class="grid-productos">
                     ${filteredProducts.map((product, index) => `
-                        <div class="producto">
-                            <i class="fas fa-heart icono-esquinaa" onclick="toggleFavorite(event, ${index})"></i>
-                            <img src="${product.imagen}" alt="${product.nombre}" onclick="productSelected(${index})">
+                        <div class="producto" onclick="navigateToProductDetail('${encodeURIComponent(product.nombre)}')">
+                            <i class="fas fa-heart icono-esquinaa"></i>
+                            <img src="${product.imagen}" alt="${product.nombre}">
                             <h2>${product.nombre}</h2>
                             <p>${product.descripcion || ''}</p>
                             <p class="precio">$${product.precio}</p>
-                            <i class="fas fa-plus plus1" onclick="addToCart(event, ${index})"></i>
+                            <i class="fas fa-plus plus1"></i>
                         </div>
                     `).join('')}
                 </div>
@@ -113,41 +111,6 @@ function searchProducts() {
     }
 }
 
-// Función para agregar al carrito
-function addToCart(event, index) {
-    event.stopPropagation(); // Evita que se active el onclick del producto
-    const allProducts = [...Products, ...Otricos];
-    const product = allProducts[index];
-    
-    // Obtener el carrito actual del localStorage o crear uno nuevo
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    
-    // Agregar el producto al carrito
-    cart.push({
-        nombre: product.nombre,
-        precio: product.precio,
-        imagen: product.imagen,
-        cantidad: 1 // Cantidad inicial
-    });
-    
-    // Guardar el carrito actualizado
-    localStorage.setItem('cart', JSON.stringify(cart));
-    
-    // Opcional: Mostrar alguna confirmación visual
-    alert('Producto agregado al carrito');
-}
-
-// Función para manejar favoritos
-function toggleFavorite(event, index) {
-    event.stopPropagation();
-    const heartIcon = event.target;
-    heartIcon.classList.toggle('active');
-    // Aquí puedes agregar la lógica para guardar los favoritos si lo deseas
-}
-
-// Función para seleccionar un producto específico
-function productSelected(index) {
-    const allProducts = [...Products, ...Otricos];
-    const productselected = allProducts[index];
-    window.location = `./Producto1.html?name=${encodeURIComponent(productselected.nombre)}`;
+function navigateToProductDetail(productName) {
+    window.location = `./Producto1.html?name=${productName}`;
 }
