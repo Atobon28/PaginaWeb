@@ -305,6 +305,29 @@ h1 {
     color: rgb(189, 148, 12); 
 }
 
+.icono-esquinaa.active {
+    color: red;
+}
+
+.producto .fas {
+    cursor: pointer;
+}
+
+.producto img {
+    cursor: pointer;
+}
+
+/* Animación al agregar al carrito */
+@keyframes addedToCart {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.plus1.added {
+    animation: addedToCart 0.3s ease-in-out;
+    color: rgb(189, 148, 12);
+}
 .footer {
     background-color: #5c3b1e; 
     color: white; 
