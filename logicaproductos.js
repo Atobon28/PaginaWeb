@@ -59,3 +59,55 @@ function OtricosProductselected(pos) {
     let productselected = Otricos[pos];
     window.location = `./Producto1.html?name=${encodeURIComponent(productselected.nombre)}`;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+   
+
+    document.getElementById('searchButton').addEventListener('click', searchProducts);
+    document.getElementById('searchInput').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            searchProducts();
+        }
+    });
+});
+
+function searchProducts() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const resultsContainer = document.getElementById('searchResults');
+    resultsContainer.innerHTML = ''; 
+
+    const allProducts = [...Products, ...Otricos];
+    const filteredProducts = allProducts.filter(product => {
+        return product.nombre.toLowerCase().includes(query);
+    });
+
+    if (filteredProducts.length > 0) {
+        
+        resultsContainer.innerHTML = `
+            <div class="section productos">
+                <h1>Resultados de búsqueda</h1>
+                <div class="grid-productos">
+                    ${filteredProducts.map((product, index) => `
+                        <div class="producto" onclick="productSelected(${index})">
+                            <i class="fas fa-heart icono-esquinaa"></i>
+                            <img src="${product.imagen}" alt="${product.nombre}">
+                            <h2>${product.nombre}</h2>
+                            <p>${product.descripcion || ''}</p>
+                            <p class="precio">$${product.precio}</p>
+                            <i class="fas fa-plus plus1"></i>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    } else {
+        resultsContainer.innerHTML = `
+            <div class="section productos">
+                <h1>Resultados de búsqueda</h1>
+                <p style="text-align: center; font-family: 'Poppins', sans-serif; color: #3c2307;">
+                    No se encontraron productos que coincidan con tu búsqueda.
+                </p>
+            </div>
+        `;
+    }
+}

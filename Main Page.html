@@ -11,7 +11,7 @@
 <body>
     <div>
         <div class="barrita">
-            <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
+            <img class="logo" src="./IMAGENES/Ilustración_sin_título.png" alt="Logo">
             <div class="alinear">
                 <a href="./INDEX.html">Inicio</a>
                 <a href="#Sobrenosotros">Sobre Nosotros</a>
@@ -25,16 +25,18 @@
             </div>
         </div>
     
-    <div class="contenedor-busqueda">
-        <i class="fa-solid fa-filter icono-esquina izquierda"></i> 
-    
-        <div class="buscador-centrado">
-            <i class="fa-solid fa-magnifying-glass"></i> 
-            <input type="text" placeholder="Buscar..." class="busca">
+        <div class="contenedor-busqueda">
+            <i class="fa-solid fa-filter icono-esquina izquierda"></i> 
+        
+            <div class="buscador-centrado">
+                <i class="fa-solid fa-magnifying-glass"></i> 
+                <input type="text" id="searchInput" placeholder="Buscar..." class="busca">
+                <button id="searchButton">Buscar</button>
+            </div>
+        
+            <i class="fa-brands fa-gratipay icono-esquina derecha"></i> 
         </div>
-    
-        <i class="fa-brands fa-gratipay icono-esquina derecha"></i> 
-    </div>
+        <div id="searchResults"></div> 
     
     <section class="Losmejoreprodu">
         <h1>Los Mejores Para Tu Casa</h1>
@@ -103,13 +105,9 @@
         </div>
     </footer>
 
-
-
-
     <script src="https://kit.fontawesome.com/1d60dfaa33.js" crossorigin="anonymous"></script>
     <script src="./Product.js"></script>
     <script src="./Productos.js"></script>
     <script src="./logicaproductos.js"></script>
-
 </body>
 </html>

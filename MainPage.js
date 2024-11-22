@@ -19,3 +19,4 @@ function addToCart(index) {
 
     alert(`${product.nombre} ha sido agregado al carrito.`);
 }
+
